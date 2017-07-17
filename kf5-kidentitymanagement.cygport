@@ -1,0 +1,22 @@
+inherit kf5
+
+NAME="kf5-kidentitymanagement"
+VERSION=17.04.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="KDE PIM identity management library"
+
+PKG_NAMES="libKF5IdentityManagement5 libKF5IdentityManagement-devel"
+libKF5IdentityManagement5_CONTENTS="
+	usr/bin/cygKF5IdentityManagement-5.dll
+	usr/share/doc/${NAME}
+	usr/share/locale/*/LC_MESSAGES/libkpimidentities5.mo
+"
+libKF5IdentityManagement_devel_CONTENTS="
+	usr/include/KF5/KIdentityManagement/
+	usr/include/KF5/kidentitymanagement_version.h
+	usr/lib/cmake/KF5IdentityManagement/
+	usr/lib/libKF5IdentityManagement.dll.a
+	usr/lib/qt5/mkspecs/modules/qt_KIdentityManagement.pri
+	usr/share/dbus-1/interfaces/kf5_org.kde.pim.IdentityManager.xml
+"
